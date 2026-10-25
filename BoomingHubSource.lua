@@ -5,7 +5,7 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = 'Boominghub V1 | Beta',
+    Title = 'Veil Hub V1 | Beta',
     Center = true,
     AutoShow = true,
     TabPadding = 8,
@@ -1298,7 +1298,7 @@ MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', {
 
 Library.ToggleKeybind = Options.MenuKeybind
 
-NotifyGroup:AddLabel('Boominghub V1 | Beta')
+NotifyGroup:AddLabel('VeilHub V1 | Beta')
 NotifyGroup:AddLabel('Press the menu keybind to hide/show this menu')
 NotifyGroup:AddLabel('The Panic keybind below disables all toggles at once')
 
@@ -1324,8 +1324,8 @@ ThemeManager:SetLibrary(Library)
 SaveManager:SetLibrary(Library)
 SaveManager:IgnoreThemeSettings()
 SaveManager:SetIgnoreIndexes({ 'MenuKeybind', 'PanicKey' })
-ThemeManager:SetFolder('Boominghub')
-SaveManager:SetFolder('Boominghub/game')
+ThemeManager:SetFolder('VeilHub')
+SaveManager:SetFolder('VeilHub/game')
 SaveManager:BuildConfigSection(Tabs['UI Settings'])
 ThemeManager:ApplyToTab(Tabs['UI Settings'])
 SaveManager:LoadAutoloadConfig()
